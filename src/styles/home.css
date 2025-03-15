@@ -12,11 +12,13 @@
     flex-direction: column;
     gap: 28px;
     margin-top: 5%;
+    
 }
 
 .ctaTitle {
     font-size: 2rem;
     color:var( --text-b);
+    text-align: start;
 }
 
 .ctaTitle span {
