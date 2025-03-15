@@ -10,6 +10,8 @@
     width: 100%;
     padding: 20px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -34,19 +36,6 @@ h1 {
     border-radius: 8px;
 }
 
-button {
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
 #results {
     margin: 24px 0;
     display: grid;
@@ -55,13 +44,15 @@ button:hover {
 }
 
 .product {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+    width: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
@@ -97,6 +88,10 @@ button:hover {
     margin: 20px 0px;
 }
 
+#categoriesMobile {
+    display: none;
+}
+
 #categories button {
     padding: 10px 15px;
     background-color: #333;
@@ -112,4 +107,70 @@ button:hover {
     background-color: var(--btn-hover);
     box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
     color: white;
+}
+
+.btnMobile_categorias{
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+
+    .container {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .btnMobile_categorias {
+        display: block;
+        padding: 10px 15px;
+        background-color: #333;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+        color: #fff;
+    }
+
+    .btnMobile_categorias:hover {
+        background-color: var(--btn-hover);
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    }
+
+    #categories {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #categoriesMobile.active {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .btn_Mobile_Item {
+        background-color: transparent;
+        border: none;
+        color: #1d1d1dad;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    #results {
+        margin: 12px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product {
+        width: 100%;
+    }
 }

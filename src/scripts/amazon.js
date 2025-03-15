@@ -70,4 +70,20 @@ document.getElementById('categories').addEventListener('click', (event) => {
 
     // Simula o envio do formulário de busca
     document.getElementById('search-form').dispatchEvent(new Event('submit'));
+
 });
+
+// Adiciona evento aos botões das categorias mobile
+document.getElementById('categoriesMobile').addEventListener('click', (event) => {
+    const category = event.target.dataset.category;
+    if (!category) return; // Ignora se o clique não for em um botão com data-category
+
+    // Define o valor da pesquisa como o nome da categoria
+    document.getElementById('search-input').value = category;
+
+    // Simula o envio do formulário de busca
+    document.getElementById('search-form').dispatchEvent(new Event('submit'));
+
+});
+
+
