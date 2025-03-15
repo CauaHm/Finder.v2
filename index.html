@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/home.css">
+    <link rel="stylesheet" href="src/styles/products.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -49,22 +50,51 @@
                     Aumente suas vendas! Cadastre seus produtos e <span>alcance mais clientes na sua
                     região!</span>
                 </h1>
-                <p>Destaque seus produtos e aumente suas vendas com o <span>Finder</span>! Nosso site conecta clientes
-                    que buscam produtos online com lojas locais como a sua. Cadastre seus produtos agora e ganhe mais
+                <p>
+                    Cadastre seus produtos agora e ganhe mais
                     visibilidade, atraindo clientes próximos e impulsionando seu negócio!
                 </p>
 
                 <div class="cta_buttons">
-                    <button class="btnDefault">Entre em contato</button>
+                    <button class="btnDefault">Ver produtos</button>
+                    <ul class="navList_social social">
+                        <li class="social_buttons"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="social_buttons"><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li class="social_buttons"><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
                 </div>
+                    
             </div>
             <div class="banner">
-                <img src="src/images/Blue Purple Modern Animated Computer Science Presentation (1).png" alt="">
+                <img src="src/images/blueComputer.png" alt="">
             </div>
         </section>
+
+        <section class="projects">
+            <h2 class="section-title">Produtos</h2>
+            <div class="container">
+                <form class="container-form" id="search-form">
+                    <input type="text" id="search-input" placeholder="Digite o nome do produto...">
+                    <button class="btnDefault" type="submit">Buscar</button>
+                </form>
+                <div id="categories">
+                    <button data-category="eletronicos">Eletrônicos</button>
+                    <button data-category="roupas">Roupas</button>
+                    <button data-category="cosmeticos">Cosméticos</button>
+                    <button data-category="esportes">Esportes</button>
+                    <button data-category="mercado">Mercado</button>
+                    <button data-category="roupas masculinas">Roupas Masculinas</button>
+                    <button data-category="roupas femininas">Roupas Femininas</button>
+                </div>
+                <div id="results"></div>
+            </div>
+          
+        </section>
+
     </main>
 
     <script src="/src/scripts/btnMobile.js"></script>
+    <script src="src/scripts/amazon.js"></script>
 </body>
 
 </html>
