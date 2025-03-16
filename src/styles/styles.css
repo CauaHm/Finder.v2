@@ -17,6 +17,19 @@
 
 :root {
     --white: #ffffff;
+    --bg: #333;
+    --text-black: #1d1d1d;
+    --sub-text-black: #fff;
+    --sub-text: #fff;
+    --yellow-3: #e9a209;
+    --yellow-2: #ffcb45;
+    --yellow-1: #f8d477;
+    --yellow-0: #ffe8b4;
+    --active: #ffe100;
+    --active-p: #ffe100;
+}
+/*
+   --white: #ffffff;
     --bg: #fff9ea;
     --black-2: #1d1d1d;
     --black-1: #1d1d1dad;
@@ -25,7 +38,10 @@
     --yellow-2: #ffcb45;
     --yellow-1: #f8d477;
     --yellow-0: #ffe8b4;
-}
+    --active: #ffe100;
+    --active-p: ##1d1d1d;
+ */
+
 
 html {
     scroll-behavior: smooth;
@@ -52,7 +68,7 @@ section {
 
 .btnDefault a{
     text-decoration: none;
-    color: var(--black-2);
+    color: var(--text-black);
 }
 
 .btnDefault{
@@ -81,7 +97,7 @@ section {
     width: 45px;
     height: 45px;
     font-size: 1.25rem;
-    color: var(--black-2);
+    color: var(--text-black);
     background-color: var(--white);
     text-decoration: none;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);

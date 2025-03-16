@@ -68,7 +68,7 @@
 }
 
 .bid_list i span {
-    color: var(--black-2);
+    color: var(--text-black);
     font-weight: 600;
 }
 

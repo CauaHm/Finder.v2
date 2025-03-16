@@ -29,12 +29,12 @@
     justify-content: center;
     align-items: center;
     gap: 48px;
-    color: var(--black-1);
+    color: var(--sub-text-black);
 }
 
 .navList_item a {
     text-decoration: none;
-    color: var(--black-1);
+    color: var(--sub-text-black);
     font-weight: 600;
 }
 
@@ -43,8 +43,8 @@
 }
 
 .navList_item.active a {
-    color: var(--black-2);
-    border-bottom: 3px solid #ffe100;
+    color: var(--active-p);
+    border-bottom: 3px solid var(--active);
 }
 
 .btn_Mobile,

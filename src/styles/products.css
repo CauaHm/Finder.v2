@@ -16,9 +16,14 @@
     justify-content: center;
 }
 
-h1 {
+.projects h2 {
     text-align: center;
-    color: var(--gray-0);
+    color: var(--sub-text);
+}
+
+.container h3 {
+    color: var(--sub-text);
+    height: 400;
 }
 
 .container-form {
@@ -67,6 +72,8 @@ h1 {
     position: relative;
     overflow: hidden;
 }   
+
+
 
 
 
@@ -155,7 +162,7 @@ h1 {
 #categories a {
     align-self: self-end;
     text-decoration: none;
-    color: var(--black-1);
+    color: var(--sub-text-black);
 }
 
 .categoriesBtn {
@@ -243,7 +250,7 @@ h1 {
     .btn_Mobile_Item {
         background-color: transparent;
         border: none;
-        color: var(--black-1);
+        color: var(--sub-text-black);
         font-weight: 600;
         cursor: pointer;
     }

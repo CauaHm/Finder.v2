@@ -17,7 +17,7 @@
 
 .ctaTitle {
     font-size: 2rem;
-    color:var( --black-2);
+    color:var( --white);
     text-align: start;
 }
 
@@ -27,6 +27,7 @@
 
 .cta p {
     font-size: 1.2rem;
+    color: var(--white);
 }
 
 .cta_buttons {
@@ -40,7 +41,7 @@
     justify-content: center;
     align-items: center;
     gap: 48px;
-    color: var(--black-1);
+    color: var(--sub-text-black);
 }
 
 .banner {
@@ -101,6 +102,6 @@
         justify-content: center;
         align-items: center;
         gap: 48px;
-        color: var(--black-1);
+        color: var(--sub-text-black);
     }
  }
