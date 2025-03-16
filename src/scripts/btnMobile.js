@@ -39,7 +39,7 @@ $(document).ready(function(){
         duration: 2000,
         origin: 'left', 
         distance: '20%',  
-        delay: 500
+        delay: 100
     });
 
     revelar.reveal('.categoriesBtn', {
