@@ -27,6 +27,10 @@
     --yellow-0: #ffe8b4;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: var(--bg);
 }
@@ -43,7 +47,12 @@ section {
     margin: 8%; 
 }
 
-.btnDefault {
+.btnDefault a{
+    text-decoration: none;
+    color: var(--black-2);
+}
+
+.btnDefault{
     border: none;
     display: flex;
     align-items: center;
