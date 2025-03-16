@@ -17,12 +17,12 @@
 
 .ctaTitle {
     font-size: 2rem;
-    color:var( --text-b);
+    color:var( --black-2);
     text-align: start;
 }
 
 .ctaTitle span {
-    color: var(--p-color);
+    color: var(--yellow-3);
 }
 
 .cta p {
@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     gap: 48px;
-    color: #1d1d1dad
+    color: var(--black-1);
 }
 
 .banner {
@@ -57,7 +57,7 @@
  }
 
  .shape {
-    background-color: #ffe8b4;
+    background-color: var(--yellow-0);
     width: 50%;
     height: 100%;
     position: absolute;
@@ -101,6 +101,6 @@
         justify-content: center;
         align-items: center;
         gap: 48px;
-        color: #1d1d1dad
+        color: var(--black-1);
     }
  }

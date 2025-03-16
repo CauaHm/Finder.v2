@@ -1,5 +1,5 @@
 .rodape {
-    background-color: #ffe8b4;
+    background-color: var(--yellow-0);
 }
 
 .footer_items {
@@ -10,7 +10,7 @@
 }
 
 .copy {
-    color: #1d1d1d;
+    color: var(--black-2);
     font-weight: 500;
 }
 

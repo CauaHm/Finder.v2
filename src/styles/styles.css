@@ -11,11 +11,15 @@
 }
 
 :root {
+    --white: #ffffff;
     --bg: #fff9ea;
-    --text-b: #1d1d1d;
-    --p-color: #e9a209;
-    --btn-color: #ffcb45;
-    --btn-hover: #f8d477;
+    --black-2: #1d1d1d;
+    --black-1: #1d1d1dad;
+    --gray-0: #333;
+    --yellow-3: #e9a209;
+    --yellow-2: #ffcb45;
+    --yellow-1: #f8d477;
+    --yellow-0: #ffe8b4;
 }
 
 body {
@@ -31,7 +35,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffcb45;
+    background-color: var(--yellow-2);
     border-radius: 12px;
     padding: 10px 14px;
     font-weight: 600;
@@ -41,6 +45,25 @@ section {
 }
 
 .btnDefault:hover {
-    background-color: #f8d477;
+    background-color: var(--yellow-1);
+}
+
+.social_buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+    color: var(--black-2);
+    background-color: var(--white);
+    text-decoration: none;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social_buttons a:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
 }
 
