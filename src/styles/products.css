@@ -91,10 +91,6 @@ h1 {
     text-decoration: underline;
 }
 
-.container h3 {
-    align-self: start;
-}
-
 #categories {
     display: flex;
     justify-content: space-between;
