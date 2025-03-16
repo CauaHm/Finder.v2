@@ -1,0 +1,107 @@
+.contact {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.finderContact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 70%;
+    align-items: start;
+}
+
+.finderContact h2 {
+    font-size: 2.5rem;
+}
+
+.finderContact h2 span {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background-color: var(--yellow-2);
+}
+
+.finderLogo {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-image: url("/src/images/logoFinder.png");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid var(--yellow-2);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow .3s ease;
+}
+
+.finderLogo:hover {
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactSocial {
+    width: 35%;
+}
+
+.contactSocial form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.contactSocial form div {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.contactSocial form div input {
+    outline: none;
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px;
+    border: 1px solid var(--yellow-2);
+}
+
+.msg {
+    height: 200px;
+}
+
+@media screen and (max-width: 1170px) {
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .finderContact {
+        width: 100%;
+    }
+
+    .finderContact h2, .finderContact h2 span {
+        font-size: 1.3rem;
+    }
+
+    .finderLogo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contactSocial {
+        width: 100%;
+    }
+
+    .contactSocial form div{
+        text-align: start;
+        font-size: 1rem;
+    }
+
+    .contactSocial form div input {
+        width: 100%;
+        padding: 10px;
+    }
+}
+

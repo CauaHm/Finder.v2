@@ -1,0 +1,103 @@
+.bid {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 48px;
+    position: relative;
+}
+
+.bid-cards {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: self-start;
+    padding: 20px;
+    gap: 24px;
+}
+
+.bid-cards h2 {
+    font-size: 2.5rem;
+}
+
+.bid-cards h2 span {
+    text-transform: uppercase;
+    background-color: var(--yellow-2);
+}
+
+.bid-cards .card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: self-start;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid var(--yellow-2);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.bid-cards .card i {
+    color: var(--yellow-3);
+    font-size: 1.5rem;
+}
+
+.bid-cards .card h2 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.bid_list {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: center;
+    align-items: self-start;
+    padding: 20px;
+    gap: 24px;
+    position: absolute;
+    right: 8%;
+    top: 14%;
+}
+
+.bid_list i{
+    color: var(--yellow-3);
+    font-size: 1.5rem;
+}
+
+.bid_list i span {
+    color: var(--black-2);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1170px) {
+    .bid {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bid-cards {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .bid-cards .card {
+        text-align: start;
+    }
+
+    .bid_list {
+        position: static;
+        width: 100%;
+        text-align: start;
+    }
+
+
+}

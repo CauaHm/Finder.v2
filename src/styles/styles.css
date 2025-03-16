@@ -4,6 +4,10 @@
 @import url("products.css");
 @import url("header.css");
 @import url("login.css");
+@import url("about.css");
+@import url("bid.css");
+@import url("contact.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +33,14 @@ body {
 
 section {
     padding: 28px 8%;
+}
+
+.cta-reveal, .banner-reveal, .whatWeDo_txt-title-reveal, .whatWeDo_list-reveal, .bid-card-title-reveal, .card, .finderContact-title-reveal, .contactSocial form div, .finderLogo-reveal, .categoriesBtn, .section-title, .container-form {
+    visibility: hidden;
+}
+
+.contentAbout section{
+    margin: 8% 0 8% 0; 
 }
 
 .btnDefault {
@@ -67,4 +79,20 @@ section {
 .social_buttons a:hover {
     box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
 }
+
+@keyframes upAndDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Subir levemente */
+    }
+    100% {
+      transform: translateY(0); /* Voltar à posição original */
+    }
+  }
+  
+  .img-up-down {
+    animation: upAndDown 2s ease-in-out infinite; /* Animação contínua */
+  }
 
