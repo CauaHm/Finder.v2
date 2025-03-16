@@ -79,6 +79,7 @@
 
     .finderContact {
         width: 100%;
+        align-items: center;
     }
 
     .finderContact h2, .finderContact h2 span {
