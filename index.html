@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="src/styles/header.css">
     <link rel="stylesheet" href="src/styles/home.css">
@@ -20,7 +21,7 @@
 <body>
     <header class="headerContainer">
         <nav class="headerNavBar">
-            <span class="Navfogo">Finder</span>
+            <div class="navlogo"></div>
             <ul class="navList">
                 <li class="navList_item active"><a href="">Inicio</a></li>
                 <li class="navList_item"><a href="">Produtos</a></li>
@@ -73,28 +74,75 @@
         <section class="projects">
             <h2 class="section-title">Produtos</h2>
             <div class="container">
+               
                 <form class="container-form" id="search-form">
                     <input type="text" id="search-input" placeholder="Produto...">
                     <button class="btnDefault" type="submit">Buscar</button>
                 </form>
+
+                <h3>Pesquise por Categorias</h3>
                 <div id="categories">
-                    <button data-category="eletronicos">Eletrônicos</button>
-                    <button data-category="roupas">Roupas</button>
-                    <button data-category="cosmeticos">Cosméticos</button>
-                    <button data-category="esportes">Esportes</button>
-                    <button data-category="mercado">Mercado</button>
-                    <button data-category="roupas masculinas">Roupas Masculinas</button>
-                    <button data-category="roupas femininas">Roupas Femininas</button>
+                    <button class="categoriesBtn" data-category="eletronicos">
+                        <i class="fa-solid fa-computer"></i>
+                        Eletrônicos
+                    </button>
+                    <button class="categoriesBtn" data-category="roupas">
+                        <i class="fa-solid fa-shirt"></i>
+                        Roupas
+                    </button>
+                    <button class="categoriesBtn" data-category="cosmeticos">
+                        <i class="bi bi-brush-fill"></i>
+                        Cosméticos
+                    </button>
+                    <button class="categoriesBtn" data-category="esportes">
+                        <i class="fa-regular fa-futbol"></i>
+                        Esportes
+                    </button>
+                    <button class="categoriesBtn" data-category="mercado">
+                        <i class="fa-solid fa-shop"></i>
+                        Mercado
+                    </button>
+                    <button class="categoriesBtn" data-category="roupas masculinas">
+                        <i class="bi bi-gender-male"></i>
+                        Roupas Masculinas
+                    </button>
+                    <button class="categoriesBtn" data-category="roupas femininas">
+                        <i class="bi bi-gender-female"></i>
+                        Roupas Femininas
+                    </button>
                 </div>
+               
                 <button class="btnMobile_categorias">Categorias</button>
+                
                 <div id="categoriesMobile">
-                    <button class="btn_Mobile_Item" data-category="eletronicos">Eletrônicos</button>
-                    <button class="btn_Mobile_Item" data-category="roupas">Roupas</button>
-                    <button class="btn_Mobile_Item" data-category="cosmeticos">Cosméticos</button>
-                    <button class="btn_Mobile_Item" data-category="esportes">Esportes</button>
-                    <button class="btn_Mobile_Item" data-category="mercado">Mercado</button>
-                    <button class="btn_Mobile_Item" data-category="roupas masculinas">Roupas Masculinas</button>
-                    <button class="btn_Mobile_Item" data-category="roupas femininas">Roupas Femininas</button>
+                    <button class="btn_Mobile_Item" data-category="eletronicos">
+                        <i class="fa-solid fa-computer"></i>
+                        Eletrônicos
+                    </button>
+                    <button class="btn_Mobile_Item" data-category="roupas">
+                        <i class="fa-solid fa-shirt"></i>
+                        Roupas
+                    </button>
+                    <button class="btn_Mobile_Item" data-category="cosmeticos">
+                        <i class="bi bi-brush-fill"></i>
+                        Cosméticos
+                    </button>
+                    <button class="btn_Mobile_Item" data-category="esportes">
+                        <i class="fa-regular fa-futbol"></i>
+                        Esportes
+                    </button>
+                    <button class="btn_Mobile_Item" data-category="mercado">
+                        <i class="fa-solid fa-shop"></i>
+                        Mercado
+                    </button>
+                    <button class="btn_Mobile_Item" data-category="roupas masculinas">
+                        <i class="bi bi-gender-male"></i>
+                        Roupas Masculinas
+                    </button>
+                    <button class="btn_Mobile_Item" data-category="roupas femininas">
+                        <i class="bi bi-gender-female"></i>
+                        Roupas Femininas
+                    </button>
                 </div>
                 
                 <div id="results"></div>

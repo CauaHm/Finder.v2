@@ -81,7 +81,12 @@
 
     .cta {
         width: 100%;
+        justify-content: center;
         align-items: center;
+        text-align: center;
+    }
+
+    .ctaTitle {
         text-align: center;
     }
 
