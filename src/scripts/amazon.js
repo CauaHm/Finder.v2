@@ -39,20 +39,40 @@ document.getElementById('search-form').addEventListener('submit', async (event) 
             console.log("Produto:", product);
         
             // Acessando as propriedades corretas do objeto
-            const image = product.product_photo ?? 'Imagem não disponível';
-            const title = product.product_title ?? 'Título não disponível';
+            const image = product.product_photo ?? '';
+            const title = product.product_title ?? '';
             const price = product.product_price ?? 'Preço não disponível';
+            const vendas = product.sales_volume ?? '';
+            const priceLater = product.product_original_price ?? '';
+            const avaliation = product.product_star_rating ?? 'Avaliação indisponivel'
+            
             const url = product.product_url ?? '#';
+
+            function gerarEstrelas(avaliacao) {
+                const totalEstrelas = 5;
+                const estrelasCheias = Math.floor(avaliacao);
+                const meiaEstrela = avaliacao % 1 >= 0.3 && avaliacao % 1 <= 0.7 ? 1 : 0;
+                const estrelasVazias = totalEstrelas - estrelasCheias - meiaEstrela;
+        
+                return '★'.repeat(estrelasCheias) + (meiaEstrela ? '⯨' : '') + '☆'.repeat(estrelasVazias);
+            }
         
             return `
-                <div class="product">
-                    <img src="${image}" alt="${title}">
-                    <h2>${title}</h2>
-                    <p>Preço: ${price}</p>
-                    <a href="${url}" target="_blank">Ver na Amazon</a>
+            <div class="product">
+                <div class ="product-heart"><i class="fa-solid fa-heart"></i></div>
+                <div class="product_infosImg">
+                <img src="${image}" alt="${title}">
+                <h2>${title}</h2>
+                <p class="pPromotion"> ${priceLater}<p/>
                 </div>
-            `;
-        }).join('');
+                <div class="product_infos">
+                <p class ="price"><strong>${price}</strong></p>
+                <p>${gerarEstrelas(avaliation)} (${avaliation})</p>
+                <a href="${url}" target="_blank">Ver na Amazon</a>
+                </div>
+            </div>
+        `;
+    }).join('');
 
     } catch (error) {
         resultsContainer.innerHTML = '<p>Erro ao buscar produtos.</p>';
@@ -74,16 +94,15 @@ document.getElementById('categories').addEventListener('click', (event) => {
 });
 
 // Adiciona evento aos botões das categorias mobile
-document.getElementById('categoriesMobile').addEventListener('click', (event) => {
-    const category = event.target.dataset.category;
-    if (!category) return; // Ignora se o clique não for em um botão com data-category
+const categoriesMobile = document.getElementById('categoriesMobile');
+if (categoriesMobile) {
+    categoriesMobile.addEventListener('click', (event) => {
+        const category = event.target.dataset.category;
+        if (!category) return;
+        document.getElementById('search-input').value = category;
+        document.getElementById('search-form').dispatchEvent(new Event('submit'));
+    });
+}
 
-    // Define o valor da pesquisa como o nome da categoria
-    document.getElementById('search-input').value = category;
-
-    // Simula o envio do formulário de busca
-    document.getElementById('search-form').dispatchEvent(new Event('submit'));
-
-});
 
 
