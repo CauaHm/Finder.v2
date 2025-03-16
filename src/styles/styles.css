@@ -29,10 +29,12 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
 body {
     background-color: var(--bg);
+    overflow-x: hidden;
 }
 
 section {
@@ -44,7 +46,7 @@ section {
 }
 
 .contentAbout section{
-    margin: 8%; 
+    margin: 8% 0; 
 }
 
 .btnDefault a{
