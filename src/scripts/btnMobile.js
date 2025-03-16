@@ -39,21 +39,17 @@ $(document).ready(function(){
     ScrollReveal().reveal('.cta', {
         origin: 'left', 
         duration: 3000,
-        distance: '20%' 
-    })
+        distance: '70%' 
+    });
     ScrollReveal().reveal('.banner', {
         origin: 'right', 
         duration: 2500,
         distance: '20%' 
-    })
+    });
     ScrollReveal().reveal('.projects', {
-        origin: 'left', 
-        duration: 2500,
-        distance: '20%' 
-    })
-    ScrollReveal().reveal('#categories', {
         origin: 'right', 
         duration: 2500,
         distance: '20%' 
-    })
+    });
+
 });
