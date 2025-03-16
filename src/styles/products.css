@@ -152,6 +152,11 @@ h1 {
         text-align: center;
         gap: 12px;
         width: 100%;
+        text-align: center;
+    }
+
+    .container h3 {
+        align-self: center;
     }
 
     .btnMobile_categorias {
@@ -182,7 +187,7 @@ h1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         gap: 8px;
     }
 
