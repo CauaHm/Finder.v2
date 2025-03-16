@@ -1,7 +1,7 @@
 .home {
     width: 100%;
     display: flex;
-    min-height: calc(100vh - 96px);
+    min-height: calc(100vh - 100px);
     overflow: hidden;
     position: relative;
 }

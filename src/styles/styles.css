@@ -39,6 +39,7 @@ body {
 
 section {
     padding: 28px 8%;
+    margin-top: 100px;
 }
 
 .cta-reveal, .banner-reveal, .whatWeDo_txt-title-reveal, .whatWeDo_list-reveal, .bid-card-title-reveal, .card, .finderContact-title-reveal, .contactSocial form div, .finderLogo-reveal, .categoriesBtn, .section-title, .container-form {
