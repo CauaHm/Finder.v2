@@ -8,7 +8,7 @@ document.getElementById('search-form').addEventListener('submit', async (event) 
     resultsContainer.innerHTML = '<p>Buscando...</p>';
 
     const url = 'https://real-time-amazon-data.p.rapidapi.com/search';
-    const apiKey = '35b41da415msh6ec701b11514ecep1037ccjsn4cab3add831c';
+    const apiKey = '7a1ddbc53emshe062230528d1b46p10f924jsnd561853668fe';
 
     const options = {
         method: 'GET',
