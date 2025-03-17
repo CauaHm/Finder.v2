@@ -52,7 +52,11 @@
 }
 
 @media screen and (max-width: 1170px) {
+    .contentAbout {
+        margin-top: 100px;
+    }
     .whatWeDo {
+
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
