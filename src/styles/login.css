@@ -21,9 +21,8 @@ body {
 .contentLogin {
     background-color:#fff ;
     border-radius: 15px;
-    width: 80%;
+    width: 960px;
     height: 50%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -48,14 +47,25 @@ body {
     color: #fff;
 }
 
+.title-second {
+    color: #ffcb45;
+}
+
 .descripition {
     font-size: 14px;
     font-weight: 300;
-    color: #fff;
     line-height: 30px;
 }
 
-.btn {
+.descripition-primary {
+    color: #fff;
+}
+
+.descripition-second {
+    color: #7f8c8c;
+}
+
+.btnLogin {
     border-radius: 15px;
     text-transform: uppercase;
     color: #fff;
@@ -63,6 +73,9 @@ body {
     padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
+    width: 150px;
+    align-self: center;
+    border: none;
 }
 
 .btn-primary {
@@ -72,6 +85,17 @@ body {
 
 .btn-primary:hover {
     background-color: #fff;
+    color: #ffcb45;
+}
+
+.btn-second {
+    background-color: #ffcb45;
+    border: 1px solid #ffcb45;
+}
+
+.btn-second:hover {
+    background-color: #fff;
+    border: 1px solid #ffcb45;
     color: #ffcb45;
 }
 
@@ -94,11 +118,33 @@ body {
 
 .list-social-media {
     display: flex;
+    list-style-type: none;
 }
 
-.form {
+.item-social-media a {
+    color: #95a5a6;
+}
+
+.item-social-media {
+    border: 1px solid #95a5a6;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.formLogin {
     display: flex;
     flex-direction: column;
+    width: 55%;
+}
+
+.formLogin input {
+    height: 45px;
+    border: none;
+    color: #ecf0f1;
+    margin: 8px;
 }
 
 .second-content {
