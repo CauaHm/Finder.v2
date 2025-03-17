@@ -51,17 +51,17 @@ body {
     color: var(--yellow-2);
 }
 
-.descripitionLogin {
+.descriptionLogin {
     font-size: 14px;
     font-weight: 300;
     line-height: 30px;
 }
 
-.descripition-primary {
+.description-primary {
     color: var(--white);
 }
 
-.descripition-second {
+.description-second {
     color: var( --light-blue);
 }
 
@@ -148,7 +148,7 @@ body {
     background-color: var(--light-gray);
 }
 
-.Labellogin-input {
+.labelLogin-input {
     display: flex;
     align-items: center;
     background-color: var(--light-gray);
