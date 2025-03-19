@@ -37,7 +37,7 @@ body {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 
-    left: 0%;
+    left: 0;
 }
 
 .titleLogin {
@@ -228,5 +228,10 @@ body {
 
 .sign-up-js .second-content .first-column,
 .sign-up-js .second-content .second-column {
-    
+    z-index: -1;
+}
+
+.sign-up-js .first-content .first-column,
+.sign-up-js .first-content .second-column {
+    z-index: 11;
 }
