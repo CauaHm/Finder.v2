@@ -37,7 +37,7 @@ body {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 
-    left: 60%;
+    left: 0%;
 }
 
 .titleLogin {
@@ -86,6 +86,7 @@ body {
 .btn-primary {
     background-color: transparent;
     border: 1px solid var(--white);
+    transition: background-color 0.5s;
 }
 
 .btn-primary:hover {
@@ -96,6 +97,7 @@ body {
 .btn-second {
     background-color: var(--yellow-2);
     border: 1px solid var(--yellow-2);
+    transition: background-color 0.5s;        
 }
 
 .btn-second:hover {
@@ -106,17 +108,20 @@ body {
 
 .first-content {
     display: flex;
-    display: none;
+}
+
+.first-content .second-column {
+    z-index: 11;
 }
 
 .first-column {
     text-align: center;
-    flex: 1 0 auto;
+    width: 40%;
     z-index: 10;
 }
 
 .second-column {
-    flex: 2 0 auto;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,6 +133,10 @@ body {
 
 .link-social-media:not(:first-child) {
     margin-left: 10px;
+}
+
+.link-social-media .item-social-media {
+    transition: background-color 0.5s;
 }
 
 .link-social-media:hover .item-social-media {
@@ -177,7 +186,7 @@ body {
     padding: 0 5px;
 }
 
-/* second contente */
+/* second content */
 
 .second-content {
     position: absolute;
@@ -186,10 +195,12 @@ body {
 
 .second-content .first-column {
     order: 2;
+    z-index: -1;
 }
 .second-content .second-column {
     order: 1;
-}
+    z-index: -1;
+} 
 
 .passwordLogin{
     color:var(--gray-0) ; 
@@ -199,4 +210,23 @@ body {
 
 .passwordLogin::first-letter {
     text-transform: capitalize;
+}
+
+.sign-in-js.first-content.first-column,
+.sign-in-js.first-content.second-column {
+    z-index: -1;
+}
+
+.sign-in-js .second-content .first-column,
+.sign-in-js .second-content .second-column {
+    z-index: 11;
+}
+
+.sign-in-js .contentLogin::before {
+    left: 60%;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+    
 }
