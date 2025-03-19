@@ -212,8 +212,9 @@ body {
     text-transform: capitalize;
 }
 
-.sign-in-js.first-content.first-column,
-.sign-in-js.first-content.second-column {
+
+.sign-in-js .first-content .first-column,
+.sign-in-js .first-content .second-column {
     z-index: -1;
 }
 
