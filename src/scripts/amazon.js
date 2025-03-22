@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
             headers: {
                 'X-RapidAPI-Key': apiKey,
                 'X-RapidAPI-Host': 'real-time-amazon-data.p.rapidapi.com'
-            }
-        };
+                }
+            };
 
         try {
             const response = await fetch(`${url}?query=${encodeURIComponent(query)}&country=BR`, options);
