@@ -32,11 +32,13 @@
     border: 1px solid var(--yellow-2);
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: box-shadow .3s ease;
+    transition: 1s ease;
 }
 
 .finderLogo:hover {
     box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--yellow-0);
+    
 }
 
 .contactSocial {
@@ -57,7 +59,7 @@
     font-weight: 400;
 }
 
-.contactSocial form div input {
+.contactSocial form div input,  .contactSocial form div input, .msg {
     outline: none;
     width: 100%;
     border-radius: 8px;
@@ -65,9 +67,6 @@
     border: 1px solid var(--yellow-2);
 }
 
-.msg {
-    height: 200px;
-}
 
 @media screen and (max-width: 1170px) {
     .contact {
