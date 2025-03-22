@@ -1,10 +1,20 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+
 body,html{
     height: 100%;
+    
 }
+
+.fa-heart.active {
+    color: var(--black-2);
+    border-bottom: 3px solid #ffe100;
+}
+
 .container-favoritos{
     height: calc(100% - 100px);
     width: 100%;
