@@ -15,7 +15,7 @@
 }
 
 .navlogo {
-    background-image: url(/src/images/logoFinder.png);
+    background-image: url(../images/logoFinder.png);
     background-position: center;
     background-size: cover;
     width: 200px;
