@@ -10,6 +10,10 @@ body,html{
     
 }
 
+.headerNavBar {
+    padding-right: 16px;
+}
+
 .fa-heart.active {
     color: var(--black-2);
     border-bottom: 3px solid #ffe100;
