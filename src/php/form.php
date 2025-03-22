@@ -20,5 +20,4 @@
         echo "<script>alert('ERRO, verifique os campos')</script>";
     }
 
-    header('Location: index.html');
 ?>
