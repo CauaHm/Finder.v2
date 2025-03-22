@@ -1,8 +1,8 @@
 <?php 
-    $nome = $_POST['nome'] ?? 'VAZIO';
-    $email = $_POST['email'] ?? 'VAZIO';
-    $cel = $_POST['cel'] ?? 'VAZIO';
-    $msg = $_POST['msg'] ?? 'VAZIO';
+    $nome = $_GET['nome'] ?? 'VAZIO';
+    $email = $_GET['email'] ?? 'VAZIO';
+    $cel = $_GET['cel'] ?? 'VAZIO';
+    $msg = $_GET['msg'] ?? 'VAZIO';
 
     $para = "cauamh321@gmail.com";
     $assunto = "Duvidas - FINDER";
@@ -18,6 +18,6 @@
         echo "<script>alert('E-mail enviado com sucesso!')</script>";
     } else {
         echo "<script>alert('ERRO, verifique os campos')</script>";
-    }
+    }; 
 
 ?>
