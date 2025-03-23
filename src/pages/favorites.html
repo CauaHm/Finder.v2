@@ -28,31 +28,26 @@
   </head>
   <body>
     <header class="headerContainer">
+
       <nav class="headerNavBar">
-        <a href="../../index.html">
-          <div class="navlogo"></div>
-        </a>
-        <ul class="navList">
-          <li class="navList_item active"><a href="#home">Inicio</a></li>
-          <li class="navList_item"><a href="#productss">Produtos</a></li>
-          <li class="navList_item">
-            <a href="about.html" target="_blank">Sobre</a>
-          </li>
-          <li class="navList_item"><i class="fa-solid fa-heart"></i></li>
-        </ul>
-        <button class="btn_Mobile">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+          <a href="/index.html">
+              <div class="navlogo"></div>
+          </a>
+          <ul class="navList">
+              <li class="navList_item"><a href="/index.html">Inicio</a></li>
+              <li class="navList_item "><a href="products.html">Produtos</a></li>
+              <li class="navList_item active"><a href="favorites.html"><i class="fa-solid fa-heart"></i></a></li>
+          </ul>
+          <button class="btn_Mobile">
+              <i class="fa-solid fa-bars"></i>
+          </button>
       </nav>
       <ul class="navList_Mobile">
-        <li class="navList_item"><a href="#home">Inicio</a></li>
-        <li class="navList_item"><a href="#productss">Produtos</a></li>
-        <li class="navList_item">
-          <a href="about.html" target="_blank">Sobre</a>
-        </li>
-        <li class="navList_item"><i class="fa-solid fa-heart"></i></li>
+          <li class="navList_item"><a href="/index.html">Inicio</a></li>
+          <li class="navList_item "><a href="products.html">Produtos</a></li>
+          <li class="navList_item active"><a href="favorites.html"><i class="fa-solid fa-heart"></i></a></li>
       </ul>
-    </header>
+  </header>
     <section class="container-favoritos">
       <main>
         <div class="container-title">
@@ -62,23 +57,6 @@
         </div>
       </main>
     </section>
-    <script src="../scripts/fav.js"></script>
-    <script src="../scripts/amazon.js"></script>
+    <script src="/src/scripts/btnMobile.js"></script>
   </body>
 </html>
-
-
-
-<!-- <div class="product">
-  <div class="product-heart product-heartClick"><i class="fa-solid fa-heart"></i></div>
-  <div class="product_infosImg">
-      <img src="${image}" alt="${title}">
-      <h2>${title}</h2>
-      <p class="pPromotion">${priceLater}</p>
-  </div>
-  <div class="product_infos">
-      <p class="price"><strong>${price}</strong></p>
-      <p>${gerarEstrelas(avaliation)} (${avaliation})</p>
-      <a href="${url}" target="_blank">Ver na Amazon</a>
-  </div>
-</div> -->
