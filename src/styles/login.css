@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +9,26 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: var(--bg);
+}
+
+.login-body {
+    background-color: var(--bg);
 }
 
 .containerLogin {
+    z-index: -8;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--light-gray);
+    background-color: var(--bg);
 }
 
 .contentLogin {
@@ -35,7 +48,7 @@ body {
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-left-radius: 15px;    
 
     left: 0;
 }
