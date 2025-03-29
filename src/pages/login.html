@@ -77,20 +77,20 @@
                     Ou use seu e-mail para se registrar:
                 </p>
 
-                <form class="formLogin">
+                <form method="POST" action="register.php" class="formLogin">
                     <label class="labelLogin-input">
                         <i class="fa-solid fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome" />
+                        <input type="text" name="name" id="name" placeholder="Nome" />
                     </label>
 
                     <label class="labelLogin-input">
                         <i class="fa-solid fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="Email" />
+                        <input type="email" name="email" id="email" placeholder="Email" />
                     </label>
 
                     <label class="labelLogin-input">
                         <i class="fa-solid fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha" />
+                        <input type="password" name="password" id="password" placeholder="Senha" />
                     </label>
 
                     <button class="btnLogin btn-second">Criar</button>
@@ -135,16 +135,16 @@
 
                 <!--icones social media-->
                 <p class="descriptionLogin description-second">ou use sua conta de email:</p>
-                <form class="formLogin">
+                <form  method="POST" action="login.php"  class="formLogin">
                         
                         <label class="labelLogin-input">
                             <i class="fa-solid fa-envelope icon-modify"></i>
-                            <input type="email" placeholder="Email" />
+                            <input type="email" name="email" placeholder="Email" />
                         </label>
     
                         <label class="labelLogin-input">
                             <i class="fa-solid fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senha" />
+                            <input type="password" name="password" placeholder="Senha" />
                         </label>
                         
                         <a class="passwordLogin" href="#">esqueceu sua senha?</a>
