@@ -285,7 +285,7 @@ html {
     display: none;
 }
 
-.containerCadastro {
+.containerCadastroMobile {
     display: none;
 }
 
@@ -564,7 +564,7 @@ html {
     }
 }
 
-/* Para tablets (de 768px a 1024px) */
+/* de 768px a 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
     .containerCadastro {
         display: flex; /* Mostra a versão desktop */
